@@ -1,0 +1,12 @@
+# 仓库内容统一以 LF 存储与检出，避免跨平台 diff 噪声
+* text=auto eol=lf
+
+# shell 脚本必须为 LF，否则在 Linux/macOS 上会报 bad interpreter: /bin/sh^M
+*.sh text eol=lf
+
+# 常见二进制类型不做文本转换（本仓库当前为纯文本）
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+*.zip binary
